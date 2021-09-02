@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_custom_branches",
+  "info": {
+    "name": "branch",
+    "icon": "code-branch",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

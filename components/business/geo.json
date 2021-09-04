@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_business_geos",
+  "info": {
+    "name": "geo",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    }
+  }
+}

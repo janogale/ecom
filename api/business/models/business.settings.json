@@ -19,13 +19,6 @@
     "description": {
       "type": "richtext"
     },
-    "phone": {
-      "type": "biginteger"
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
-    },
     "branches": {
       "type": "component",
       "repeatable": true,
@@ -34,6 +27,64 @@
     "hasBranch": {
       "type": "boolean",
       "default": false
+    },
+    "slogan": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "default": "Hargeisa",
+      "required": true
+    },
+    "hasWhatsapp": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "hasMap": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "hasBanner": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "hasLogo": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "hasHours": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "business.contact",
+      "required": true
+    },
+    "geo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "business.geo"
+    },
+    "hours": {
+      "type": "component",
+      "repeatable": false,
+      "component": "business.hours"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": false,
+      "component": "business.images"
     }
   }
 }

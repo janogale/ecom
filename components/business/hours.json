@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_business_hours",
+  "info": {
+    "name": "hours",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "closing": {
+      "type": "string",
+      "required": true
+    },
+    "opening": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

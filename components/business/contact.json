@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_business_contacts",
+  "info": {
+    "name": "contact",
+    "icon": "phone-alt"
+  },
+  "options": {},
+  "attributes": {
+    "mobile": {
+      "type": "biginteger",
+      "required": true
+    },
+    "telephone": {
+      "type": "biginteger"
+    },
+    "whatsAppNumber": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}

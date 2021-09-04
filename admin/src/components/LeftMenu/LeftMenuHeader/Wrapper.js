@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
   .projectName {
     display: block;
-    background-color: #122541;
+    background-color: red;
     width: 100%;
     height: ${(props) => props.theme.main.sizes.leftMenu.height};
     font-size: 2rem;

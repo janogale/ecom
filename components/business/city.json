@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_business_cities",
+  "info": {
+    "name": "city",
+    "icon": "city",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "Hargeisa"
+    }
+  }
+}

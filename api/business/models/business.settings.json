@@ -31,10 +31,6 @@
     "slogan": {
       "type": "string"
     },
-    "address": {
-      "type": "string",
-      "required": true
-    },
     "location": {
       "type": "string",
       "default": "Hargeisa",
@@ -85,6 +81,15 @@
       "type": "component",
       "repeatable": false,
       "component": "business.images"
+    },
+    "city": {
+      "model": "city",
+      "via": "businesses"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "businesses",
+      "dominant": true
     }
   }
 }

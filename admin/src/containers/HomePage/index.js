@@ -32,9 +32,15 @@ const FIRST_BLOCK_LINKS = [
 
 
 const HomePage = ({ history: { push } }) => {
-  const { error, isLoading, posts } = useFetch();
+    const { error, isLoading, posts } = useFetch();
   // Temporary until we develop the menu API
   const { collectionTypes, singleTypes, isLoading: isLoadingForModels } = useModels();
+
+React.useEffect(()=>{
+
+  window.document.title = "Bigil Tech"
+
+},[])
 
   const handleClick = e => {
     e.preventDefault();

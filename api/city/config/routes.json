@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/cities/:id",
+      "path": "/cities/:slug",
       "handler": "city.findOne",
       "config": {
         "policies": []

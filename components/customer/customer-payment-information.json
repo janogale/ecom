@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_customer_customer_payment_informations",
+  "info": {
+    "name": "customerPaymentInformation",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "paymentType": {
+      "type": "string",
+      "required": true
+    },
+    "provider": {
+      "type": "string"
+    },
+    "expiry": {
+      "type": "date"
+    },
+    "accountNumber": {
+      "type": "string"
+    }
+  }
+}

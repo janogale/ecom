@@ -21,9 +21,9 @@
     "description": {
       "type": "string"
     },
-    "businesses": {
+    "products": {
       "via": "categories",
-      "collection": "business"
+      "collection": "product"
     }
   }
 }

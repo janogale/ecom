@@ -1,0 +1,22 @@
+{
+  "collectionName": "images",
+  "info": {
+    "name": "images",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

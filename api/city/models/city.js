@@ -5,4 +5,12 @@
  * to customize this model
  */
 
-module.exports = {};
+const { v4: uuidv4 } = require("uuid");
+
+module.exports= {
+lifecycles: {
+async beforeCreate(data) {
+data.cid = uuidv4();
+},
+},
+};

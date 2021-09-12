@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_products_product_variants",
+  "info": {
+    "name": "productVariant",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "black",
+        "blue",
+        "red",
+        "yellow",
+        "orange"
+      ],
+      "default": "white"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "size": {
+      "type": "string"
+    }
+  }
+}

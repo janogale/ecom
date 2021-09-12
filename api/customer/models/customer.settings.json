@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "middleName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ],
+      "required": true,
+      "default": "male"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "birthDate": {
+      "type": "date"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "isLoggedIn": {
+      "type": "boolean",
+      "default": false
+    },
+    "lastLogin": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "disable"
+      ],
+      "default": "active"
+    },
+    "password": {
+      "type": "password",
+      "unique": false,
+      "required": true
+    },
+    "paymentInformation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "customer.customer-payment-information"
+    }
+  }
+}

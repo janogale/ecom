@@ -2,26 +2,28 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "product"
+    "name": "product",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
       "required": true
     },
     "description": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "price": {
       "type": "float"
     },
     "image": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "files",
@@ -29,16 +31,11 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": true
+      "required": true,
+      "pluginOptions": {}
     },
     "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "Custom_field": {
-      "type": "component",
-      "repeatable": true,
-      "component": "custom.custom-field"
+      "type": "uid"
     },
     "status": {
       "type": "enumeration",
@@ -48,6 +45,33 @@
       ],
       "default": "published",
       "required": true
+    },
+    "stock": {
+      "type": "string"
+    },
+    "pid": {
+      "type": "uid"
+    },
+    "isDiscount": {
+      "type": "boolean",
+      "default": false
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "createdUser": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "variant": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.product-variant"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "products",
+      "dominant": true
     }
   }
 }
